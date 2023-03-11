@@ -4,9 +4,11 @@ import Header from "@/components/Header";
 const Layout = ({children}) => {
     return (
         <>
-           <Header/>
-           <main>{children}</main>
-           <Footer/> 
+           <header className=" shadow-lg"><Header/></header>
+           <main className="container mx-auto">
+                {children}
+            </main>
+            <Footer/> 
         </>
     );
 };
